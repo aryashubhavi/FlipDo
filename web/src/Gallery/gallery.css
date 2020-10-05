@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,800);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,700);
+.card-container *{
+  box-sizing:border-box;
+  min-height: inherit;
+}
+
+h3 {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+.negative {
+  font-weight: normal;
+}
+.card-container, figure{
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+.custom-card{
+  position: relative;
+  -webkit-transition:0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+figure{
+  color: #fff;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition:0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.9);
+}
+
+figure.front{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  z-index: 2;
+}
+
+figure.back,
+.custom-card.flipped{
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+figure .fa {
+    font-size: 0.9em
+}
+
+figure img{
+  position: relative;
+  display: block;
+  min-height: inherit;
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) )
+}
+
+figure .caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  padding: 1em;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+figure i {
+  padding: 2em;
+  transition: all .3s ease-in-out; 
+}
+
+figure i:hover {
+  -webkit-transform:scale(1.5); /* Safari and Chrome */
+  -moz-transform:scale(1.5); /* Firefox */
+  -ms-transform:scale(1.5); /* IE 9 */
+  -o-transform:scale(1.5); /* Opera */
+   transform:scale(1.5);
+  }
+
+figure .fa {
+  color: #fff !important;
+}
+.front .caption{
+  font-size: 0.90em;
+  overflow: scroll;
+}
+
+.front .caption:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+  background: linear-gradient(rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+  content: '';
+  opacity: 0.3;
+}
+
+.front h2{
+  word-spacing: 0.15em;
+  font-weight: 300;
+/*  font-size: 1.6em;*/
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+}
+
+.front p {
+  letter-spacing: 1px;
+/*  font-size: 68.5%;*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  opacity: 0;
+}
+
+.back .caption:before{
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0,1);
+          transform: scale(0,1);
+}
+
+.back .caption:after{
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1,0);
+          transform: scale(1,0);
+}
+
+.custom-card.flipped .back .caption:before,
+.custom-card.flipped .back .caption:after {
+  opacity: .9;
+  -webkit-transform: scale(1);
+          transform: scale(1);  
+}
+
+.back h2{
+  word-spacing: 0.15em;
+  font-weight: 300;
+/*  font-size: 1.6em;*/
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+}
+
+figure a{
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.share-social {
+  position: absolute;
+  bottom: 0;
+  width:85%;
+}
+
+.box.dark {
+ background-color: hsl(0, 0%, 21%);
+}
+
+.box.dark > h2 {
+  color: #fff;
+  display: inline-block;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+  40% {-webkit-transform: translateY(-30px) }
+  60% {-webkit-transform: translateY(-20px);}
+} 
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-20px);}
+} 
+
+.bounce {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+
+.number {
+  vertical-align: middle;
+  display: table-cell;
+  color: white;
+  background-color: transparent;
+}

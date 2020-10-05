@@ -1,0 +1,40 @@
+.cloud {
+  background: url(https://content.mycutegraphics.com/frames/blue-scribble-border.png) no-repeat center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14rem;
+  position: relative;
+  width: 78%;
+  height: 634px;
+  display: table;
+}
+.thought {
+  display: table-cell;
+  width: 50%;
+}
+.add-padding {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.submit-for-cloud {
+  margin-top: .5rem;
+  display: table;
+  width: 100%;
+}
+.submit-for-cloud-cell {
+  display: table-cell;
+  margin-left: 25%;
+  margin-right: 15%;
+  text-align: center;
+  color: #42aaf5;
+}
+.thoughtText {
+  font-size: x-large;
+  text-align: center;
+  padding-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 142px;
+  overflow: scroll;
+  color: #42aaf5; /*changed font color as the color was not visible (original was white)*/
+}

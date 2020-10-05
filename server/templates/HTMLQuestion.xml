@@ -1,0 +1,36 @@
+<QuestionForm xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd">
+
+  <Question>
+		<QuestionIdentifier>001</QuestionIdentifier>
+		<DisplayName>Re-write a negative thought with a positive spin!</DisplayName>
+		<IsRequired>true</IsRequired>
+		<QuestionContent>
+			<Title>The following text is a negative thought that a person typed about themself:</Title>
+      <Title> "%%THOUGHT.TAG%%" </Title>
+      <Title> Rewrite this thought in a way that is more positive. For instance, try to think up a way of saying it that might go on a motivational poster. Try to be as inspirational as possible so that you can encourage the person to feel better about themself!  </Title>
+
+      <Text> Here is an example negative thought: </Text>
+      <List>
+        <ListItem>"I am so terrible at speaking in public...everyone is going to think I'm an idiot."</ListItem>
+      </List>
+
+      <Text> Acceptable responses could be: </Text>
+      <List>
+        <ListItem>"I present great ideas. That's what really matters."</ListItem>
+        <ListItem>"I am going to share my brilliance with the world, and who cares what they think!"</ListItem>
+      </List>
+
+      <Text> Note: You cannot simply negate what was written, or make the thought more negative. Unacceptable responses include not changing the text at all, submitting nothing, or something like: </Text>
+			<List>
+				<ListItem>"I am not terrible at speaking in public, and everyone is not going to think I'm an idiot."</ListItem>
+        <ListItem>"I suck so bad at speaking in public. What a complete loser!"</ListItem>
+			</List>
+
+		</QuestionContent>
+		<AnswerSpecification>
+			<FreeTextAnswer>
+			</FreeTextAnswer>
+		</AnswerSpecification>
+	</Question>
+
+</QuestionForm>

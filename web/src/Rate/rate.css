@@ -1,0 +1,136 @@
+.custom-card {
+  width: auto;
+  height: auto;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+.rating-box {
+  background-color: green;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+   color: white;
+ }
+
+.control-container {
+   width: 100%;
+   text-align: center;
+   display: table;
+ }
+
+.page-controls {
+   display: table-cell;
+   color: white;
+ }
+
+.page-controls, .left > svg { cursor: pointer; }
+.page-controls, .right > svg { cursor: pointer; }
+
+.circles-container {
+   display: table-cell;
+   vertical-align: middle;
+   padding-top: 5px;
+ }
+
+.circles {
+   color: white;
+   margin-left: 1em;
+   margin-right: 1em;
+ }
+
+.column-container {
+   padding: 0;
+   margin: 0;
+ }
+
+.rating-column {
+ }
+
+.reframes {
+  color: white;
+  padding: 1em;
+ }
+
+.reframe {
+  max-height: 300px;
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+.ratings {
+  padding: 1em;
+}
+
+.half-star-span > .svg-inline--fa {
+  vertical-align: 1em;
+}
+
+.svg-inline--fa {
+  vertical-align: 1em;
+}
+
+.back-button {
+  font-size: 2em;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+}
+
+.negative-thought {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+.not-logged-in {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    display: block;
+    font-size: 1.5em;
+}
+.tell-us {
+    display: none;
+}
+.tell-us.rated {
+    color: white;
+    display: block;
+}
+.tell-us.rated p {
+    font-size: x-large;
+    text-align: center;
+    /*text-decoration: underline;*/
+}
+.reason {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.reason.show {
+    display: block;
+}
+
+.change-view {
+    display: block;
+    margin-top: 1em;
+    padding-top: 1em;
+    color: white;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.number {
+  vertical-align: middle;
+  display: table-cell;
+  color: white;
+  background-color: transparent;
+}
+
+#between-btn-span {
+  margin: auto;
+  padding-left: 10px;
+}
